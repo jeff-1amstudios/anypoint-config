@@ -2,6 +2,6 @@ apiVersion: rtf.mulesoft.com/v1alpha1
 kind: Environment
 metadata:
   labels:
-  name: jeffenv1
+  name: ack-environment
 spec:
-  businessGroupName: mynewbg
+  businessGroupName: mulesoft

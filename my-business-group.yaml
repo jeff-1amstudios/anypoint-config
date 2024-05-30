@@ -2,6 +2,6 @@ apiVersion: rtf.mulesoft.com/v1alpha1
 kind: BusinessGroup
 metadata:
   labels:
-  name: mynewbg
+  name: ack-businessgroup
 spec:
   

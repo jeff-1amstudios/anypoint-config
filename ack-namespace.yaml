@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    rtf.mulesoft.com/agentNamespace: rtf
+    rtf.mulesoft.com/envId: f51ae8e4-accb-4fca-aa5b-6d7c34729829
+    rtf.mulesoft.com/org: eb9e7ba7-37d4-4ec5-a4d8-278bce19d675
+    # rtf.mulesoft.com/environment: ack-test
+    # rtf.mulesoft.com/org: ack-test-org
+    rtf.mulesoft.com/role: workers
+  name: ack-test

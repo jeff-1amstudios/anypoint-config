@@ -3,7 +3,7 @@ kind: Mule
 metadata:
   labels:
   name: mule-sample
-  namespace: f51ae8e4-accb-4fca-aa5b-6d7c34729829
+  namespace: ack-test
 spec:
   targetId: 44b4ed9b-136d-432b-939a-bc7846fd9de4
   businessGroupId: eb9e7ba7-37d4-4ec5-a4d8-278bce19d675

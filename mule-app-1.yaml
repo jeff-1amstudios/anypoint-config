@@ -35,19 +35,19 @@ spec:
   - secretRef:
       name: keystore-passwords
   volumes:
-  - name: aws-secrets-volume
-    csi:
-      driver: secrets-store.csi.k8s.io
-      readOnly: true
-      volumeAttributes:
-        secretProviderClass: aws-secrets
+  # - name: aws-secrets-volume
+  #   csi:
+  #     driver: secrets-store.csi.k8s.io
+  #     readOnly: true
+  #     volumeAttributes:
+  #       secretProviderClass: aws-secrets
   - name: javakeystore
     secret:
       secretName: javakeystore
   volumeMounts:
-  - name: aws-secrets-volume
-    mountPath: /var/config/aws
-    readOnly: true
+  # - name: aws-secrets-volume
+  #   mountPath: /var/config/aws
+  #   readOnly: true
   - name: javakeystore
     mountPath: /var/tls
     readOnly: true

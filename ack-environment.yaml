@@ -1,7 +1,0 @@
-apiVersion: rtf.mulesoft.com/v1alpha1
-kind: Environment
-metadata:
-  labels:
-  name: ack-environment
-spec:
-  businessGroupName: mulesoft

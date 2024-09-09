@@ -9,7 +9,7 @@ spec:
   businessGroupId: eb9e7ba7-37d4-4ec5-a4d8-278bce19d675
   environmentId: f51ae8e4-accb-4fca-aa5b-6d7c34729829
   clustered: false
-  runtimeVersion: 4.7.0:19e-java8
+  runtimeVersion: 4.8.0:2e-java8
   resources:
     requests:
       cpu: 20m

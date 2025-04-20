@@ -9,7 +9,7 @@ spec:
   businessGroupId: eb9e7ba7-37d4-4ec5-a4d8-278bce19d675
   environmentId: f51ae8e4-accb-4fca-aa5b-6d7c34729829
   clustered: false
-  runtimeVersion: 4.8.0:2e-java8
+  runtimeVersion: 4.9.1:2e-java8
   resources:
     requests:
       cpu: 20m
@@ -17,7 +17,7 @@ spec:
     limits:
       cpu: 4000m
       memory: 2700Mi
-  replicas: 1
+  replicas: 2
   application:
     ref:
       groupId: eb9e7ba7-37d4-4ec5-a4d8-278bce19d675

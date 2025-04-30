@@ -33,7 +33,7 @@ spec:
   - name: keystore.path
     value: /var/tls/example2.com.p12
   - name: a
-    value: j
+    value: k
   propertiesFrom:
   - secretRef:
       name: keystore-passwords

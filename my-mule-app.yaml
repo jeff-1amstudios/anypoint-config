@@ -5,6 +5,9 @@ metadata:
   name: mule-sample
   namespace: ack-test
 spec:
+  #targetId: 4a1f8a5e-bba1-43df-bb90-99dc82f7ace0
+  #businessGroupId: eb9e7ba7-37d4-4ec5-a4d8-278bce19d675
+  #environmentId: f51ae8e4-accb-4fca-aa5b-6d7c34729829
   target: jeff-rtf
   businessGroup: mulesoft
   environment: Sandbox2
@@ -12,10 +15,10 @@ spec:
   runtimeVersion: 4.6.16:2-java8
   resources:
     requests:
-      cpu: 20m
+      cpu: 1000m
       memory: 700Mi
     limits:
-      cpu: 4000m
+      cpu: 4900m
       memory: 2700Mi
   replicas: 1
   application:
@@ -30,10 +33,11 @@ spec:
   - name: keystore.path
     value: /var/tls/example2.com.p12
   - name: a
-    value: c
+    value: b
   propertiesFrom:
   - secretRef:
       name: keystore-passwords
+  # serviceAccountName: mule-custom-sa
   volumes:
   # - name: aws-secrets-volume
   #   csi:
@@ -41,13 +45,13 @@ spec:
   #     readOnly: true
   #     volumeAttributes:
   #       secretProviderClass: aws-secrets
-  - name: javakeystore
-    secret:
-      secretName: javakeystore
+  # - name: javakeystore
+  #   secret:
+  #     secretName: javakeystore
   volumeMounts:
   # - name: aws-secrets-volume
-  #   mountPath: /var/config/aws
+  #   mountPath: /var/properties/aws
   #   readOnly: true
-  - name: javakeystore
-    mountPath: /var/tls
-    readOnly: true
+  # - name: javakeystore
+  #   mountPath: /var/tls
+  #   readOnly: true

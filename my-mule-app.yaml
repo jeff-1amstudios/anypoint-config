@@ -9,7 +9,7 @@ spec:
   businessGroup: mulesoft
   environment: Sandbox2
   clustered: false
-  runtimeVersion: 4.8.0:2e-java8
+  runtimeVersion: 4.6.16:2-java8
   resources:
     requests:
       cpu: 20m

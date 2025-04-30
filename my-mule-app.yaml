@@ -1,5 +1,5 @@
 apiVersion: rtf.mulesoft.com/v1alpha1
-kind: Mule
+kind: MuleApplication
 metadata:
   labels:
   name: mule-sample

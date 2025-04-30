@@ -3,7 +3,7 @@ kind: MuleApplication
 metadata:
   labels:
   name: mule-sample
-  namespace: ack-test
+  namespace: ci
 spec:
   #targetId: 4a1f8a5e-bba1-43df-bb90-99dc82f7ace0
   #businessGroupId: eb9e7ba7-37d4-4ec5-a4d8-278bce19d675

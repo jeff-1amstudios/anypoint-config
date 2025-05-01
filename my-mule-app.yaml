@@ -8,7 +8,7 @@ spec:
   target: jeff-rtf
   businessGroup: mulesoft
   environment: Sandbox2
-  clustered: false
+  clustered: true
   runtimeVersion: 4.6.16:2-java8
   resources:
     requests:
@@ -17,7 +17,7 @@ spec:
     limits:
       cpu: 5000m
       memory: 2700Mi
-  replicas: 1
+  replicas: 2
   application:
     ref:
       groupId: 1fbd2e46-128a-478c-a5fb-c03a655f82cd

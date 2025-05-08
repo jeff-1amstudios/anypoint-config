@@ -1,0 +1,4 @@
+kind: Ingress
+spec:
+  urls:
+   - example.com/app1

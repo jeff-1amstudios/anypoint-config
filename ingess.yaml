@@ -2,3 +2,5 @@ kind: Ingress
 spec:
   urls:
    - example.com/app1
+   service:
+   - my-mule
